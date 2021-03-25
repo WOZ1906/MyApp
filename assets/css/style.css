@@ -164,7 +164,15 @@ img{
 }
 .nav__logo{
   color: var(--second-color);
+  -webkit-transition: color 1s; /* For Safari 3.0 to 6.0 */
+  transition: color 1s; /* For modern browsers */
 }
+
+.nav__logo:hover{
+  color: var(--first-color);
+
+}
+
 .nav__toggle{
   color: var(--second-color);
   font-size: 1.5rem;
@@ -374,12 +382,17 @@ margin-bottom: var(--mb-4);
 @media screen and (min-width: 320px)
 {
   .home__img{
-    position: absolute;
-  right: 15px;
-  bottom: 5px;
-  width: 240px;
-
-
+  position: absolute;
+  right: 45px;
+  bottom: 60px;
+  width: 190px;
+}
+ .home__social{
+   margin-top: 70px;
+ }
+ .button{
+  padding: .50rem 1.5rem;
+  border-radius: .5rem;
 }
 @media screen and (min-width: 768px){
     body{
@@ -419,6 +432,7 @@ margin-bottom: var(--mb-4);
     }
     .home__data{
         align-self: flex-end;
+        margin-top: 100px;
     }
     .home__social{
         padding-top: 0;
@@ -432,7 +446,7 @@ margin-bottom: var(--mb-4);
     }
     .home__img{
         width: 300px;
-        bottom: 15%;
+        bottom: 30%;
 
     }
     .about__container, .skills__container{
@@ -465,6 +479,6 @@ margin-bottom: var(--mb-4);
         margin-right: auto;
     }
     .home__img{
-        right: 10%;
+        right: 19%;
     }
   
