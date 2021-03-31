@@ -28,10 +28,11 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'top',
-    distance: '80px',
+    distance: '90px',
     duration: 2000,
     reset: true
 })
+
 
 /*===== SCROLL HOME =====*/
 sr.reveal('.home__title',{})
@@ -51,7 +52,7 @@ sr.reveal('.skills__data',{interval: 200})
 sr.reveal('.skills__img',{delay: 400})
 
 /*===== SCROLL WORK =====*/
-sr.reveal('.work__img',{interval: 200})
+// sr.reveal('.work__img',{interval: 200})
 
 /*===== SCROLL CONTACT =====*/
-sr.reveal('.contact__input',{interval: 200})
+// sr.reveal('.contact__input',{interval: 200})
